@@ -1,0 +1,48 @@
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.main__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.main__background--mobile {
+  display: none;
+}
+.logo {
+  margin: 0 auto;
+  display: block;
+  padding-top: 35px;
+}
+.img-abs-1 {
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  .main__background--mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  .main__background {
+    display: none;
+  }
+}
