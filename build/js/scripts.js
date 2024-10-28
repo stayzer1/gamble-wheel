@@ -29,6 +29,7 @@ const modalTitle = document.querySelector(".modal__title");
 const modalText = document.querySelector(".modal__text");
 const modalMessage = document.querySelector("#modal-message");
 const tryAgainButton = document.getElementById("tryAgainButton");
+const blockedWheel = document.querySelector(".blocked");
 
 document.getElementById("spinButton").addEventListener("click", function () {
   const randomIndex = Math.floor(Math.random() * results.length);
@@ -36,12 +37,14 @@ document.getElementById("spinButton").addEventListener("click", function () {
 
   wheel.style.transform = `rotate(${degrees}deg)`;
   wheel.style.zIndex = "5";
+  blockedWheel.style.display = "block";
 
   setTimeout(() => {
     if (
       results[randomIndex] === "НЕ ПОВЕЗЛО" ||
       results[randomIndex] === "ПОПРОБУЙ ЕЩЕ РАЗ"
     ) {
+      wheel.style.transform = `rotate(0deg)`;
       modalTitle.innerHTML = "Попробуйте<br> ещё раз!"; // Используем innerHTML
       modalText.innerHTML = ""; // Очищаем текст
       modalMessage.innerHTML = ""; // Очищаем сообщение
@@ -61,6 +64,7 @@ document.getElementById("spinButton").addEventListener("click", function () {
 });
 
 tryAgainButton.addEventListener("click", function () {
+  blockedWheel.style.display = "none";
   modal.style.display = "none"; // Закрываем модальное окно
 });
 

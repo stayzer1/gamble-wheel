@@ -219,6 +219,16 @@ main {
   cursor: pointer;
 }
 
+.blocked {
+  display: none;
+  position: absolute;
+  left: 43%;
+  z-index: 6;
+  top: 43%;
+  width: 217px;
+  height: 216px;
+}
+
 .wheel {
   position: absolute;
   left: 50%;
@@ -446,6 +456,10 @@ main {
     left: 42%;
   }
 
+  .blocked {
+    left: 42%;
+  }
+
   .pointer-image {
     left: 46.5%;
   }
@@ -460,6 +474,10 @@ main {
     left: 40%;
   }
 
+  .blocked {
+    left: 40%;
+  }
+
   .pointer-image {
     left: 46.5%;
   }
@@ -471,6 +489,10 @@ main {
 
 @media screen and (max-width: 1024px) {
   #spinButton {
+    left: 40%;
+  }
+
+  .blocked {
     left: 40%;
   }
 
@@ -523,6 +545,12 @@ main {
   }
 
   #spinButton {
+    width: 140px;
+    top: 45%;
+    left: 41%;
+  }
+
+  .blocked {
     width: 140px;
     top: 45%;
     left: 41%;
@@ -629,6 +657,12 @@ main {
   }
 
   #spinButton {
+    width: 90px;
+    top: 50%;
+    height: 90px;
+  }
+
+  .blocked {
     width: 90px;
     top: 50%;
   }
@@ -747,6 +781,11 @@ main {
 
 @media screen and (max-width: 400px) {
   #spinButton {
+    top: 49.5%;
+    left: 39%;
+  }
+
+  .blocked {
     top: 49.5%;
     left: 39%;
   }
