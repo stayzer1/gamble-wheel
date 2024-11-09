@@ -247,26 +247,26 @@ main {
 
 .segment:nth-child(2) {
   position: absolute;
-  left: 111px;
-  top: -159px;
+  left: 103px;
+  top: -164px;
 }
 
 .segment:nth-child(3) {
   position: absolute;
-  left: 103px;
-  top: 52px;
+  left: 100px;
+  top: 54px;
 }
 
 .segment:nth-child(4) {
   position: absolute;
   top: 205px;
-  left: -107px;
+  left: -116px;
 }
 
 .segment:nth-child(5) {
   position: absolute;
   left: -291px;
-  top: 45px;
+  top: 54px;
 }
 
 .segment:nth-child(6) {
@@ -714,8 +714,8 @@ main {
 
   .segment:nth-child(5) {
     position: absolute;
-    left: -116px;
-    top: 17px;
+    left: -117px;
+    top: 22px;
   }
 
   .segment:nth-child(5) img {
