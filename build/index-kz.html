@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="main__body">
+    <main>
+      <div class="background">
+        <img src="img/bg.png" alt="" class="main__background" />
+        <img src="img/bg-mobile.png" alt="" class="main__background--mobile" />
+        <img src="img/fonari.png" alt="" class="img-abs-1" />
+        <img src="img/fonari-mobile.png" alt="" class="img-abs-1--mobile" />
+        <img src="img/money.svg" alt="" class="img-abs-2" />
+        <img src="img/dogs.png" alt="" class="img-abs-3" />
+        <img src="img/coins.png" alt="" class="img-abs-4" />
+        <img src="img/coins-mobile.png" alt="" class="img-abs-4--mobile" />
+      </div>
+      <img src="img/logo.svg" alt="" class="logo" />
+      <div class="wheel-container">
+        <div class="wheel-image" id="wheel-image">
+          <div class="wheel" id="wheel">
+            <div class="segment" style="transform: rotate(0deg)">
+              <img src="img/+500kz.png" alt="" />
+            </div>
+            <div class="segment" style="transform: rotate(61deg)">
+              <img src="img/wheel-2kz.png" alt="" />
+            </div>
+            <div class="segment" style="transform: rotate(125deg)">
+              <img src="img/150freekz.png" alt="" />
+            </div>
+            <div class="segment" style="transform: rotate(180deg)">
+              <img src="img/25freekz.png" alt="" />
+            </div>
+            <div class="segment" style="transform: rotate(-132deg)">
+              <img src="img/+500150fskz.png" alt="" />
+            </div>
+            <div class="segment" style="transform: rotate(-64deg)">
+              <img src="img/againkz.png" alt="" />
+            </div>
+          </div>
+          <img src="img/wheel.png" alt="" class="wheel-img" />
+        </div>
+        <img src="img/cowboy1.png" alt="" class="wheel-abs-img" />
+        <img src="img/cowgirl.png" alt="" class="wheel-abs-img-2" />
+        <img src="img/pointer.png" alt="" class="pointer-image" />
+        <img src="img/shadow.svg" alt="" class="wheel-shadow" />
+        <img src="img/btnkz.svg" id="spinButton" />
+        <div class="blocked"></div>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h1 class="modal__title">поздравляем!</h1>
+          <p class="modal__text">Вы выиграли</p>
+          <span id="modal-message"></span>
+          <a href="#" class="modal__link">получить бонус</a>
+          <button class="modal__btn--again" id="tryAgainButton">
+            Попробовать ещё раз
+          </button>
+          <img src="img/modal-bg.svg" alt="" class="modal__background" />
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="./js/main-kz.js"></script>
+</html>

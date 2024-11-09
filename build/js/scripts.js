@@ -1,23 +1,8 @@
 // Custom Scripts
-// Custom scripts
-
-// Smooth Scroll
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-  smoothLink.addEventListener("click", function (e) {
-    e.preventDefault();
-    const id = smoothLink.getAttribute("href");
-
-    document.querySelector(id).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  });
-}
 const results = [
   "+500%<br> к депозиту",
   "ПОПРОБУЙ ЕЩЕ РАЗ",
-  "+500% к депозиту<br> и 150ФС", // Пример с использованием <br>
+  "+500% к депозиту<br> и 150ФС",
   "25 ФРИСПИНОВ",
   "150<br> фриспинов",
   "НЕ ПОВЕЗЛО",
@@ -45,26 +30,26 @@ document.getElementById("spinButton").addEventListener("click", function () {
       results[randomIndex] === "ПОПРОБУЙ ЕЩЕ РАЗ"
     ) {
       wheel.style.transform = `rotate(0deg)`;
-      modalTitle.innerHTML = "Попробуйте<br> ещё раз!"; // Используем innerHTML
-      modalText.innerHTML = ""; // Очищаем текст
-      modalMessage.innerHTML = ""; // Очищаем сообщение
-      tryAgainButton.style.display = "flex"; // Покажем кнопку попробовать еще раз
-      document.querySelector(".modal__link").style.display = "none"; // Скрываем ссылку
+      modalTitle.innerHTML = "Попробуйте<br> ещё раз!";
+      modalText.innerHTML = "";
+      modalMessage.innerHTML = "";
+      tryAgainButton.style.display = "flex";
+      document.querySelector(".modal__link").style.display = "none";
     } else {
-      modalTitle.innerHTML = "Поздравляем!"; // Используем innerHTML
-      modalText.innerHTML = "Вы выиграли!"; // Используем innerHTML
-      modalMessage.innerHTML = results[randomIndex]; // Используем innerHTML для отображения выигрыша
-      document.querySelector(".modal__link").innerHTML = "Получить бонус"; // Используем innerHTML
-      document.querySelector(".modal__link").style.display = "flex"; // Показываем ссылку
-      tryAgainButton.style.display = "none"; // Скрываем кнопку
+      modalTitle.innerHTML = "Поздравляем!";
+      modalText.innerHTML = "Вы выиграли!";
+      modalMessage.innerHTML = results[randomIndex];
+      document.querySelector(".modal__link").innerHTML = "Получить бонус";
+      document.querySelector(".modal__link").style.display = "flex";
+      tryAgainButton.style.display = "none";
     }
 
-    modal.style.display = "flex"; // Показываем модальное окно
+    modal.style.display = "flex";
   }, 4000);
 });
 
 tryAgainButton.addEventListener("click", function () {
   blockedWheel.style.display = "none";
-  modal.style.display = "none"; // Закрываем модальное окно
+  modal.style.display = "none";
 });
 
